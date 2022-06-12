@@ -8,7 +8,7 @@ import static com.kputimcevs.bullsandcows.InputDecoder.showResult;
 public class Main {
     public static void main(String[] args) {
         CodeGenerator generator = new CodeGenerator();
-        String code = generator.generateCode().toString();
+        String code = generator.generateCode();
         System.out.println("Secret code: " + code);
         System.out.println("Try to guess code:");
         Map<String, Integer> result = Map.of();
